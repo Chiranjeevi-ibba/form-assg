@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form action="#0" class="my-form">
+                <fieldset>
+                    <legend class="form-text">This is my form</legend>
+                    <table class="my-table">
+                        <tr class="table-row">
+                            <td class="label-style"><label for="email">Email:</label></td>
+                            <td><input class="input-style" type="email" id="email"></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label-style"><label for="pwd">Password:</label></td>
+                            <td ><input class="input-style" type="password" id="pwd"></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label-style"><label for="cnfpwd">Confirm Password:</label></td>
+                            <td><input class="input-style" type="password" id="cnfpwd"></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label-style"><label for="photo">Upload Your Picture:</label></td>
+                            <td><input class="input-style" type="file" id="photo"></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label-style"><label>Gender:</label></td>
+                            <td>
+                                <input class="input-style" type="radio" id="male" name="gender">
+                                <label for="male">Male</label>
+                                <input class="input-style" type="radio" id="female" name="gender">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label-style"><label for="country">Select Country:</label></td>
+                            <td><input class="input-style" list="countries" type="text" id="country"></td>
+                            <datalist id="countries">
+                                <option value="India">
+                                <option value="Sri Lanka">
+                                <option value="USA">
+                                <option value="UK">
+                              </datalist>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="label-style"><label>Hobby:</label></td>
+                            <td>
+                                <input class="input-style" type="checkbox" id="cricket" name="hobby">
+                                <label for="cricket">Cricket</label>
+                                <input class="input-style" type="checkbox" id="football" name="hobby">
+                                <label for="football">Football</label>
+                            </td>
+                        </tr>
+                        <tr class="address-row table-row">
+                            <td class="label-style"><label for="address">Address:</label></td>
+                            <td><textarea class="input-style"  id="address" cols="30" rows="6"></textarea></td>
+                        </tr>
+                        <tr class="table-row">
+                            <td></td>
+                            <td ><input class="input-style" type="button" value="Submit"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
